@@ -1,0 +1,22 @@
+{
+  "name": "turbo-landing",
+  "version": "1.0.0",
+  "description": "🎨 Spicy landing page for Turbo",
+  "author": "teamcodebyte",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teamcodebyte/turbo-landing.git"
+  },
+  "dependencies": {
+    "next": "^10.1.3"
+  },
+  "bugs": {
+    "url": "https://github.com/teamcodebyte/turbo-landing/issues"
+  },
+  "homepage": "https://github.com/teamcodebyte/turbo-landing#readme"
+}
