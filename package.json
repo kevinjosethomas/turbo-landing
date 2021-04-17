@@ -18,5 +18,10 @@
   "bugs": {
     "url": "https://github.com/teamcodebyte/turbo-landing/issues"
   },
-  "homepage": "https://github.com/teamcodebyte/turbo-landing#readme"
+  "homepage": "https://github.com/teamcodebyte/turbo-landing#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.10",
+    "tailwindcss": "^2.1.1"
+  }
 }
