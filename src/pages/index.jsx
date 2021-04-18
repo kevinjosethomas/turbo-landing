@@ -85,6 +85,28 @@ const Index = (props) => {
           ))}
         </div>
       </div>
+      <div className="flex flex-row items-center justify-center py-32 w-full bg-night-mare-2">
+        <img src="/images/steroids.svg" className="w-min rounded-r-2xl" />
+        <div className="flex flex-col items-start justify-center px-20 w-full">
+          <div className="flex flex-col items-start justify-center space-y-4 max-w-md">
+            <h1 className="font-inter font-extrabold text-6xl text-gray-50 tracking-tight leading-[1.1em]">
+              Chrome,
+              <br />
+              on steroids
+            </h1>
+            <p className="font-inter font-medium text-3xl text-gray-200">
+              <span className="font-semibold text-gray-100">Light.</span>{" "}
+              Doesn’t use 90% of your memory for one tab. Unless you’ve got 25mb
+              of RAM.
+            </p>
+            <p className="font-inter font-medium text-3xl text-gray-200">
+              <span className="font-semibold text-gray-100">Private.</span> No
+              one but you and your pet cat can see your suspicious browser
+              history 👀
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
