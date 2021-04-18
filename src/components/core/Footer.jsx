@@ -1,11 +1,11 @@
 const Footer = (props) => {
   return (
-    <div className="flex flex-row items-center justify-between px-72 py-5 w-full bg-night-mare">
+    <div className="flex flex-row items-center justify-between px-72 py-6 w-full bg-night-mare">
       <p className="font-inter font-medium text-xl text-gray-200">
         developed by{" "}
         <a
           href="https://github.codebyte.team"
-          className="font-bold text-mist"
+          className="font-semibold text-mist"
           target="_blank"
         >
           teamcodebyte
@@ -13,7 +13,7 @@ const Footer = (props) => {
         and{" "}
         <a
           href="https://github.turb.ooo/"
-          className="font-bold text-mist"
+          className="font-semibold text-mist"
           target="_blank"
         >
           community
