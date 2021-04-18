@@ -25,6 +25,41 @@ const App = ({ Component, pageProps }) => {
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/gh/ellekasai/twemoji-awesome@gh-pages/twemoji-awesome.css"
         />
+
+        <link rel="shortcut icon" href="/favicon.ico" />
+
+        {/* Primary Meta Tags */}
+        <meta name="title" content="Turbo | The browser for developers" />
+        <meta
+          name="description"
+          content="Turbo streamlines your dev process by prioritizing developer-friendly software. Turbo is opensource and built with modern technology. Sign up in the waitlist to get early access to Turbo!"
+        />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://turb.ooo/" />
+        <meta
+          property="og:title"
+          content="Turbo | The browser for developers"
+        />
+        <meta
+          property="og:description"
+          content="Turbo streamlines your dev process by prioritizing developer-friendly software. Turbo is opensource and built with modern technology. Sign up in the waitlist to get early access to Turbo!"
+        />
+        <meta property="og:image" content="/images/banner.png" />
+
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://turb.ooo/" />
+        <meta
+          property="twitter:title"
+          content="Turbo | The browser for developers"
+        />
+        <meta
+          property="twitter:description"
+          content="Turbo streamlines your dev process by prioritizing developer-friendly software. Turbo is opensource and built with modern technology. Sign up in the waitlist to get early access to Turbo!"
+        />
+        <meta property="twitter:image" content="/images/banner.png" />
       </Head>
       <Component {...pageProps} />
     </Fragment>
