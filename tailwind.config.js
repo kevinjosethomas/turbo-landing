@@ -23,6 +23,7 @@ module.exports = {
         mist: {
           DEFAULT: "#AE8BFF",
           2: "#8E5DFF",
+          3: "#6E3DDF",
         },
       },
     },

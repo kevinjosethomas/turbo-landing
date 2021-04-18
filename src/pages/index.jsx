@@ -1,3 +1,4 @@
+import Banner from "../components/core/Banner";
 import Footer from "../components/core/Footer";
 import Navbar from "../components/core/Navbar";
 import Feature from "../components/index/Feature";
@@ -75,6 +76,7 @@ const Index = (props) => {
 
   return (
     <div className="flex flex-col min-h-screen h-full bg-night-mare-2">
+      <Banner />
       <Navbar />
       <div className="flex flex-col items-center justify-center py-56 w-full bg-night-mare-2">
         <div className="flex flex-col items-center justify-center space-y-8">
