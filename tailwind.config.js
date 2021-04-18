@@ -4,6 +4,15 @@ module.exports = {
   darkMode: false,
   theme: {
     extend: {
+      screens: {
+        "3xl": "1920px",
+      },
+      spacing: {
+        "10/12": "16.666667%",
+      },
+      maxWidth: {
+        xxs: "16rem",
+      },
       colors: {
         night: {
           mare: {

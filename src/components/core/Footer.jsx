@@ -1,7 +1,7 @@
 const Footer = (props) => {
   return (
-    <div className="flex flex-row items-center justify-between px-72 py-6 w-full bg-night-mare">
-      <p className="font-inter font-medium text-xl text-gray-200">
+    <div className="flex flex-col md:flex-row items-center justify-between space-y-5 md:space-y-0 px-10 lg:px-40 2xl:px-72 py-6 w-full bg-night-mare">
+      <p className="font-inter font-medium lg:text-lg xl:text-xl text-gray-200 text-center">
         developed by{" "}
         <a
           href="https://github.codebyte.team"
