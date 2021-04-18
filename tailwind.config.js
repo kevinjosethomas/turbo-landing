@@ -1,6 +1,6 @@
 module.exports = {
   mode: "jit",
-  purge: ["./src/pages/**/*.{js,jsx}", "./src/components/**/*.{js, jsx}"],
+  purge: ["./src/**/*.{js,jsx}"],
   darkMode: false,
   theme: {
     extend: {
@@ -10,10 +10,7 @@ module.exports = {
             DEFAULT: "#141414",
             2: "#0C0C0C",
           },
-          mist: {
-            DEFAULT: "#AE8BFF",
-            2: "#8E5DFF",
-          },
+
           sky: {
             dawn: "#E0E0E0",
             noon: "#BDBDBD",
@@ -23,6 +20,10 @@ module.exports = {
             DEFAULT: "#1C1C1C",
             100: "#282828",
           },
+        },
+        mist: {
+          DEFAULT: "#AE8BFF",
+          2: "#8E5DFF",
         },
       },
     },
