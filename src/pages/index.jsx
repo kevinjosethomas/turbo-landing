@@ -1,3 +1,4 @@
+import Footer from "../components/core/Footer";
 import Navbar from "../components/core/Navbar";
 import Feature from "../components/index/Feature";
 import FeatureSquare from "../components/index/FeatureSquare";
@@ -171,6 +172,7 @@ const Index = (props) => {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

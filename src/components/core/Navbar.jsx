@@ -7,8 +7,8 @@ const Navbar = (props) => {
       <div className="flex flex-row items-center justify-end space-x-6">
         <div className="flex flex-row items-center justify-end space-x-4">
           <a
-            href="https://twitter.turb.ooo"
-            className="fab fa-github cursor-pointer text-xl text-gray-50 hover:text-[#1DA1F2] transition duration-500"
+            href="https://github.turb.ooo"
+            className="fab fa-github cursor-pointer text-xl text-gray-50 hover:text-[#4078C0] transition duration-500"
             target="_blank"
           />
           <a
