@@ -87,7 +87,7 @@ const Index = (props) => {
       </div>
       <div className="flex flex-row items-center justify-center py-32 w-full bg-night-mare-2">
         <img src="/images/steroids.svg" className="w-min rounded-r-2xl" />
-        <div className="flex flex-col items-start justify-center px-20 w-full">
+        <div className="flex flex-col items-center justify-center w-full">
           <div className="flex flex-col items-start justify-center space-y-4 max-w-md">
             <h1 className="font-inter font-extrabold text-6xl text-gray-50 tracking-tight leading-[1.1em]">
               Chrome,
@@ -106,6 +106,26 @@ const Index = (props) => {
             </p>
           </div>
         </div>
+      </div>
+      <div className="flex flex-row items-center justify-center py-32 w-full bg-night-mare">
+        <div className="flex flex-col items-center justify-center w-full">
+          <div className="flex flex-col items-start justify-center space-y-4 max-w-md">
+            <h1 className="font-inter font-extrabold text-6xl text-gray-50 tracking-tight leading-[1.1em]">
+              Customizable,
+              <br />
+              for everyone
+            </h1>
+            <p className="font-inter font-medium text-3xl text-gray-200">
+              <span className="font-semibold text-gray-100">Themes.</span>{" "}
+              Personalize your browser with custom colors and icons!
+            </p>
+            <p className="font-inter font-medium text-3xl text-gray-200">
+              <span className="font-semibold text-gray-100">Share.</span> Easily
+              share your favorite themes with short strings ;)
+            </p>
+          </div>
+        </div>
+        <img src="/images/themes.svg" className="w-min rounded-l-2xl" />
       </div>
     </div>
   );
