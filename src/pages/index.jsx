@@ -1,4 +1,5 @@
 import Navbar from "../components/core/Navbar";
+import Feature from "../components/index/Feature";
 import FeatureSquare from "../components/index/FeatureSquare";
 
 const Index = (props) => {
@@ -43,6 +44,32 @@ const Index = (props) => {
         "Packed with features, Turbo is constantly updated to make your development process more productive!",
       className: "rounded-br-md",
     },
+  ];
+
+  const featureList = [
+    "integrated api client",
+    "localhost -> public tunneling",
+    "fully keyboard navigationable",
+    "split-screen tabs",
+    "custom themes",
+    "built-in terminal",
+    "built-in adblocker",
+    "rapid responsive web development",
+    "wakatime integration",
+    "seo rank checker",
+    "built-in vpn",
+    "custom icon themes",
+    "paywall bypasser",
+    "chrome extension support",
+    "built-in git support",
+    "test site meta tags",
+    "built-in docs viewer",
+    "quick web editor",
+    "light mode transition warning",
+    "advanced devtools",
+    "prioritize stackoverflow results",
+    "limit ram/cpu usage",
+    "and more...",
   ];
 
   return (
@@ -126,6 +153,23 @@ const Index = (props) => {
           </div>
         </div>
         <img src="/images/themes.svg" className="w-min rounded-l-2xl" />
+      </div>
+      <div className="flex flex-col items-center justify-center py-24 space-y-6 w-full bg-night-mare-2">
+        <div className="flex flex-col items-center justify-center space-y-2 max-w-4xl text-center">
+          <h1 className="font-inter font-extrabold text-5xl text-gray-50">
+            Planned Features ;)
+          </h1>
+          <p className="font-inter font-medium text-xl text-gray-400">
+            This list is an addition to the basic features you find on an
+            ordinary browser! And some of these features are only concepts and
+            might not ever appear in Turbo :(
+          </p>
+        </div>
+        <div className="flex flex-row items-center justify-center flex-wrap max-w-[88rem]">
+          {featureList.map((feature, index) => (
+            <Feature key={index} label={feature} />
+          ))}
+        </div>
       </div>
     </div>
   );

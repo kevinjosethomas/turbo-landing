@@ -10,7 +10,6 @@ module.exports = {
             DEFAULT: "#141414",
             2: "#0C0C0C",
           },
-
           sky: {
             dawn: "#E0E0E0",
             noon: "#BDBDBD",
