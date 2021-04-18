@@ -127,17 +127,17 @@ const Index = (props) => {
         />
         <div className="flex flex-col items-center justify-center w-full">
           <div className="flex flex-col items-start justify-center space-y-4 max-w-md">
-            <h1 className="font-inter font-extrabold text-6xl text-gray-50 tracking-tight leading-[1.1em]">
+            <h1 className="font-inter font-extrabold text-7xl text-gray-50 tracking-tight leading-[1.1em]">
               Chrome,
               <br />
               on steroids
             </h1>
-            <p className="font-inter font-medium text-3xl text-gray-200">
+            <p className="font-inter font-medium text-3xl text-gray-300">
               <span className="font-semibold text-gray-100">Light.</span>{" "}
               Doesn’t use 90% of your memory for one tab. Unless you’ve got 25mb
               of RAM.
             </p>
-            <p className="font-inter font-medium text-3xl text-gray-200">
+            <p className="font-inter font-medium text-3xl text-gray-300">
               <span className="font-semibold text-gray-100">Private.</span> No
               one but you and your pet cat can see your suspicious browser
               history 👀
@@ -148,16 +148,16 @@ const Index = (props) => {
       <div className="flex flex-row items-center justify-center py-32 w-full bg-night-mare">
         <div className="flex flex-col items-center justify-center w-full">
           <div className="flex flex-col items-start justify-center space-y-4 max-w-md">
-            <h1 className="font-inter font-extrabold text-6xl text-gray-50 tracking-tight leading-[1.1em]">
+            <h1 className="font-inter font-extrabold text-7xl text-gray-50 tracking-tight leading-[1.1em]">
               Customizable,
               <br />
               for everyone
             </h1>
-            <p className="font-inter font-medium text-3xl text-gray-200">
+            <p className="font-inter font-medium text-3xl text-gray-300">
               <span className="font-semibold text-gray-100">Themes.</span>{" "}
               Personalize your browser with custom colors and icons!
             </p>
-            <p className="font-inter font-medium text-3xl text-gray-200">
+            <p className="font-inter font-medium text-3xl text-gray-300">
               <span className="font-semibold text-gray-100">Share.</span> Easily
               share your favorite themes with short strings ;)
             </p>
