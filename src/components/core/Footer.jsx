@@ -18,6 +18,10 @@ const Footer = (props) => {
         >
           community
         </a>
+        , inspired by{" "}
+        <a href="https://linear.app/" target="_blank">
+          Linear
+        </a>
       </p>
       <div className="flex flex-row items-center justify-end space-x-4">
         <a
