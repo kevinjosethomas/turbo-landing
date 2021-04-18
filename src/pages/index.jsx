@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 
 import Banner from "../components/core/Banner";
 import Footer from "../components/core/Footer";
@@ -80,9 +81,26 @@ const Index = (props) => {
 
   return (
     <div className="flex flex-col min-h-screen h-full bg-night-mare-2">
-      {bannerOpen && <Banner setBannerOpen={setBannerOpen} />}
+      <AnimatePresence>
+        {bannerOpen && <Banner setBannerOpen={setBannerOpen} />}
+      </AnimatePresence>
       <Navbar />
-      <div className="flex flex-col items-center justify-center py-56 w-full bg-night-mare-2">
+      <motion.div
+        className="flex flex-col items-center justify-center py-48 w-full bg-night-mare-2"
+        initial="initial"
+        animate="animate"
+        variants={{
+          initial: {
+            scale: 0.6,
+            y: 100,
+          },
+          animate: {
+            scale: 1,
+            y: 0,
+            transition: { duration: 0.5 },
+          },
+        }}
+      >
         <div className="flex flex-col items-center justify-center space-y-8">
           <div className="flex flex-col items-center justify-center max-w-3xl space-y-4 text-center">
             <h1 className="title-shadow font-inter font-extrabold text-8xl text-gray-200">
@@ -105,7 +123,7 @@ const Index = (props) => {
             </h1>
           </a>
         </div>
-      </div>
+      </motion.div>
       <div className="flex flex-col items-center justify-center py-32 w-full bg-night-mare">
         <div className="grid grid-cols-3 gap-2">
           {featureSquareList.map((feature, index) => (
