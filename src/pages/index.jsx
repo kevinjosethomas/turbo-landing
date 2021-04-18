@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import Banner from "../components/core/Banner";
 import Footer from "../components/core/Footer";
 import Navbar from "../components/core/Navbar";
@@ -74,9 +76,11 @@ const Index = (props) => {
     "and more...",
   ];
 
+  const [bannerOpen, setBannerOpen] = useState(true);
+
   return (
     <div className="flex flex-col min-h-screen h-full bg-night-mare-2">
-      <Banner />
+      {bannerOpen && <Banner setBannerOpen={setBannerOpen} />}
       <Navbar />
       <div className="flex flex-col items-center justify-center py-56 w-full bg-night-mare-2">
         <div className="flex flex-col items-center justify-center space-y-8">
