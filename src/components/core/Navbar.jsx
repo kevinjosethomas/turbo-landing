@@ -1,7 +1,7 @@
 const Navbar = (props) => {
   return (
     <nav className="flex flex-row items-center justify-between px-64 py-5 w-full bg-night-mare">
-      <h1 className="mark-shadow font-inter font-extrabold text-4xl text-gray-200 tracking-tight">
+      <h1 className="mark-shadow select-none font-inter font-extrabold text-4xl text-gray-200 tracking-tight">
         turbo
       </h1>
       <div className="flex flex-row items-center justify-end space-x-6">
