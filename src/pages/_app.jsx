@@ -7,6 +7,23 @@ const App = ({ Component, pageProps }) => {
   return (
     <Fragment>
       <Head>
+        {/* Google Analytics */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-NG2Q29W1MB"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-NG2Q29W1MB');
+            `,
+          }}
+        />
+
         <title>Turbo</title>
 
         {/* Google Fonts; Inter */}
@@ -65,5 +82,7 @@ const App = ({ Component, pageProps }) => {
     </Fragment>
   );
 };
+
+export function reportWebVitals({ id, name, label, value }) {}
 
 export default App;
