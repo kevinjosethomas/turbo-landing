@@ -7,18 +7,18 @@ const Navbar = (props) => {
       <div className="flex flex-row items-center justify-end space-x-3 md:space-x-6">
         <div className="flex flex-row items-center justify-end space-x-2 md:space-x-4">
           <a
-            href="https://github.turb.ooo"
+            href="https://github.turbobrowser.io"
             className="fab fa-github cursor-pointer text-lg md:text-xl text-gray-50 hover:text-[#4078C0] transition duration-500"
             target="_blank"
           />
           <a
-            href="https://twitter.turb.ooo"
+            href="https://twitter.turbobrowser.io"
             className="fab fa-twitter cursor-pointer text-lg md:text-xl text-gray-50 hover:text-[#1DA1F2] transition duration-500"
             target="_blank"
           />
         </div>
         <a
-          href="https://discord.turb.ooo"
+          href="https://discord.turbobrowser.io"
           className="discord-button flex flex-row items-center justify-center px-3 md:px-6 py-2 bg-mist-2 rounded md:rounded-md transform hover:scale-[1.02] duration-700"
           target="_blank"
         >

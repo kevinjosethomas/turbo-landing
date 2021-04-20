@@ -37,7 +37,7 @@ const App = ({ Component, pageProps }) => {
 
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://turb.ooo/" />
+        <meta property="og:url" content="https://turbobrowser.io/" />
         <meta
           property="og:title"
           content="Turbo | The browser for developers"
@@ -50,7 +50,7 @@ const App = ({ Component, pageProps }) => {
 
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://turb.ooo/" />
+        <meta property="twitter:url" content="https://turbobrowser.io/" />
         <meta
           property="twitter:title"
           content="Turbo | The browser for developers"
