@@ -83,6 +83,4 @@ const App = ({ Component, pageProps }) => {
   );
 };
 
-export function reportWebVitals({ id, name, label, value }) {}
-
 export default App;
