@@ -153,7 +153,7 @@ const Index = (props) => {
               on steroids
             </h1>
             <p className="font-inter font-medium md:text-xl xl:text-2xl 2xl:text-3xl text-gray-300">
-              <span className="font-semibold text-gray-100">Lite.</span>{" "}
+              <span className="font-semibold text-gray-100">Light.</span>{" "}
               Doesn’t use 90% of your memory for one tab. Unless you’ve got 25mb
               of RAM.
             </p>
