@@ -153,7 +153,7 @@ const Index = (props) => {
       <div className="flex flex-col items-center justify-center w-full py-16 space-y-16 lg:flex-row md:py-24 lg:py-32 lg:space-y-0 bg-night-mare-2">
         <img
           src="/images/steroids.svg"
-          className="self-start w-10/12 w-min lg:self-auto lg:w-1/2 3xl:w-auto rounded-r-2xl"
+          className="self-start w-10/12 lg:self-auto lg:w-1/2 3xl:w-auto rounded-r-2xl"
           draggable="false"
         />
         <div className="flex flex-col items-start justify-center w-full lg:items-center pl-10/12 lg:pl-0">
@@ -196,12 +196,12 @@ const Index = (props) => {
         </div>
         <img
           src="/images/themes.svg"
-          className="self-end order-1 w-10/12 mb-8 w-min lg:order-none lg:self-auto lg:mb-0 lg:w-1/2 3xl:w-auto rounded-l-2xl"
+          className="self-end order-1 w-10/12 mb-8 lg:order-none lg:self-auto lg:mb-0 lg:w-1/2 3xl:w-auto rounded-l-2xl"
           draggable="false"
         />
       </div>
       <div className="flex flex-col items-center justify-center w-full py-16 space-y-6 md:py-24 lg:py-24 bg-night-mare-2">
-        <div className="flex flex-col items-center justify-center space-y-2 text-center max-w-xxs md:max-w-xl md:max-w-2xl lg:max-w-3xl xl:max-w-4xl">
+        <div className="flex flex-col items-center justify-center space-y-2 text-center max-w-xxs md:max-w-xl lg:max-w-3xl xl:max-w-4xl">
           <h1 className="text-5xl font-extrabold font-inter text-gray-50">
             Planned Features ;)
           </h1>
