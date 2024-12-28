@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 import Banner from "../components/core/Banner";
@@ -8,6 +8,19 @@ import Feature from "../components/index/Feature";
 import FeatureSquare from "../components/index/FeatureSquare";
 
 const Index = (props) => {
+  const [bannerState, setBanner] = useState(true);
+
+  useEffect(() => {
+    const banner = localStorage.getItem("banner");
+
+    setBanner(banner ? false : true);
+  }, []);
+
+  const set = () => {
+    localStorage.setItem("banner", false);
+    setBanner(false);
+  };
+
   const featureSquareList = [
     {
       icon: "fas fa-lock",
@@ -79,16 +92,14 @@ const Index = (props) => {
     "and more...",
   ];
 
-  const [bannerOpen, setBannerOpen] = useState(true);
-
   return (
-    <div className="flex flex-col min-h-screen h-full bg-night-mare-2 overflow-x-hidden">
-      <AnimatePresence>
-        {bannerOpen && <Banner setBannerOpen={setBannerOpen} />}
-      </AnimatePresence>
+    <div className="flex flex-col h-full min-h-screen overflow-x-hidden bg-night-mare-2">
+      {bannerState ? (
+        <AnimatePresence>{bannerState && <Banner set={set} />}</AnimatePresence>
+      ) : null}
       <Navbar />
       <motion.div
-        className="flex flex-col items-center justify-center py-16 md:py-32 lg:py-48 w-full bg-night-mare-2"
+        className="flex flex-col items-center justify-center w-full py-16 md:py-32 lg:py-48 bg-night-mare-2"
         initial="initial"
         animate="animate"
         variants={{
@@ -104,8 +115,8 @@ const Index = (props) => {
         }}
       >
         <div className="flex flex-col items-center justify-center space-y-8">
-          <div className="flex flex-col items-center justify-center max-w-xs md:max-w-2xl xl:max-w-3xl space-y-4 text-center">
-            <h1 className="title-shadow font-inter font-extrabold text-4xl md:text-7xl xl:text-8xl text-gray-200">
+          <div className="flex flex-col items-center justify-center max-w-xs space-y-4 text-center md:max-w-2xl xl:max-w-3xl">
+            <h1 className="text-4xl font-extrabold text-gray-200 title-shadow font-inter md:text-7xl xl:text-8xl">
               The browser
               <br />
               for developers
@@ -120,14 +131,14 @@ const Index = (props) => {
             className="waitlist-button flex flex-row items-center justify-center px-6 py-4 bg-mist-2 rounded-md transform hover:scale-[1.03] duration-700"
             target="_blank"
           >
-            <h1 className="font-inter font-medium text-xl md:text-2xl text-gray-50">
-              Join the waitlist <i className="far fa-external-link-alt ml-1" />
+            <h1 className="text-xl font-medium font-inter md:text-2xl text-gray-50">
+              Join the waitlist <i className="ml-1 far fa-external-link-alt" />
             </h1>
           </a>
         </div>
       </motion.div>
-      <div className="flex flex-col items-center justify-center py-16 md:py-24 lg:py-32 w-full bg-night-mare">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+      <div className="flex flex-col items-center justify-center w-full py-16 md:py-24 lg:py-32 bg-night-mare">
+        <div className="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3">
           {featureSquareList.map((feature, index) => (
             <FeatureSquare
               key={index}
@@ -139,25 +150,25 @@ const Index = (props) => {
           ))}
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row items-center justify-center py-16 md:py-24 lg:py-32 space-y-16 lg:space-y-0 w-full bg-night-mare-2">
+      <div className="flex flex-col items-center justify-center w-full py-16 space-y-16 lg:flex-row md:py-24 lg:py-32 lg:space-y-0 bg-night-mare-2">
         <img
           src="/images/steroids.svg"
-          className="w-min self-start lg:self-auto w-10/12 lg:w-1/2 3xl:w-auto rounded-r-2xl"
+          className="self-start w-10/12 lg:self-auto lg:w-1/2 3xl:w-auto rounded-r-2xl"
           draggable="false"
         />
-        <div className="flex flex-col items-start lg:items-center justify-center w-full pl-10/12 lg:pl-0">
-          <div className="flex flex-col items-start lg:items-start justify-center space-y-4 max-w-xxs md:max-w-md">
+        <div className="flex flex-col items-start justify-center w-full lg:items-center pl-10/12 lg:pl-0">
+          <div className="flex flex-col items-start justify-center space-y-4 lg:items-start max-w-xxs md:max-w-md">
             <h1 className="font-inter font-extrabold text-3xl md:text-5xl xl:text-6xl 2xl:text-7xl text-gray-50 tracking-tight leading-[1.1em]">
               Chrome,
               <br />
               on steroids
             </h1>
-            <p className="font-inter font-medium md:text-xl xl:text-2xl 2xl:text-3xl text-gray-300">
+            <p className="font-medium text-gray-300 font-inter md:text-xl xl:text-2xl 2xl:text-3xl">
               <span className="font-semibold text-gray-100">Light.</span>{" "}
               Doesn’t use 90% of your memory for one tab. Unless you’ve got 25mb
               of RAM.
             </p>
-            <p className="font-inter font-medium tmd:ext-xl xl:text-2xl 2xl:text-3xl text-gray-300">
+            <p className="font-medium text-gray-300 font-inter tmd:ext-xl xl:text-2xl 2xl:text-3xl">
               <span className="font-semibold text-gray-100">Private.</span> No
               one but you and your pet cat can see your suspicious browser
               history 👀
@@ -165,19 +176,19 @@ const Index = (props) => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row items-center justify-center py-16 md:py-24 lg:py-32 w-full bg-night-mare">
-        <div className="flex flex-col items-start lg:items-center justify-center order-2 lg:order-none mt-8 lg:mt-0 pl-10/12 lg:pl-0 w-full">
+      <div className="flex flex-col items-center justify-center w-full py-16 lg:flex-row md:py-24 lg:py-32 bg-night-mare">
+        <div className="flex flex-col items-start justify-center order-2 w-full mt-8 lg:items-center lg:order-none lg:mt-0 pl-10/12 lg:pl-0">
           <div className="flex flex-col items-start justify-center space-y-4 max-w-xxs md:max-w-md">
             <h1 className="font-inter font-extrabold text-3xl md:text-5xl xl:text-6xl 2xl:text-7xl text-gray-50 tracking-tight leading-[1.1em]">
               Customizable,
               <br />
               for everyone
             </h1>
-            <p className="font-inter font-medium md:text-xl xl:text-2xl 2xl:text-3xl text-gray-300">
+            <p className="font-medium text-gray-300 font-inter md:text-xl xl:text-2xl 2xl:text-3xl">
               <span className="font-semibold text-gray-100">Themes.</span>{" "}
               Personalize your browser with custom colors and icons! 🎨
             </p>
-            <p className="font-inter font-medium md:text-xl xl:text-2xl 2xl:text-3xl text-gray-300">
+            <p className="font-medium text-gray-300 font-inter md:text-xl xl:text-2xl 2xl:text-3xl">
               <span className="font-semibold text-gray-100">Share.</span> Easily
               share your favorite themes with short strings ;)
             </p>
@@ -185,16 +196,16 @@ const Index = (props) => {
         </div>
         <img
           src="/images/themes.svg"
-          className="w-min order-1 lg:order-none self-end lg:self-auto mb-8 lg:mb-0 w-10/12 lg:w-1/2 3xl:w-auto rounded-l-2xl"
+          className="self-end order-1 w-10/12 mb-8 lg:order-none lg:self-auto lg:mb-0 lg:w-1/2 3xl:w-auto rounded-l-2xl"
           draggable="false"
         />
       </div>
-      <div className="flex flex-col items-center justify-center py-16 md:py-24 lg:py-24 space-y-6 w-full bg-night-mare-2">
-        <div className="flex flex-col items-center justify-center space-y-2 max-w-xxs md:max-w-xl md:max-w-2xl lg:max-w-3xl xl:max-w-4xl text-center">
-          <h1 className="font-inter font-extrabold text-5xl text-gray-50">
+      <div className="flex flex-col items-center justify-center w-full py-16 space-y-6 md:py-24 lg:py-24 bg-night-mare-2">
+        <div className="flex flex-col items-center justify-center space-y-2 text-center max-w-xxs md:max-w-xl lg:max-w-3xl xl:max-w-4xl">
+          <h1 className="text-5xl font-extrabold font-inter text-gray-50">
             Planned Features ;)
           </h1>
-          <p className="font-inter font-medium md:text-xl text-gray-400">
+          <p className="font-medium text-gray-400 font-inter md:text-xl">
             This list is an addition to the basic features you find on an
             ordinary browser! And some of these features are only concepts and
             might not ever appear in Turbo :(
