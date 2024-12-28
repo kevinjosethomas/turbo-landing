@@ -10,18 +10,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/teamcodebyte/turbo-landing.git"
+    "url": "git+https://github.com/kevinjosethomas/turbo-landing.git"
   },
   "dependencies": {
     "framer-motion": "^4.1.4",
-    "next": "^10.1.3",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "next": "^13.5.8",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "bugs": {
-    "url": "https://github.com/teamcodebyte/turbo-landing/issues"
+    "url": "https://github.com/kevinjosethomas/turbo-landing/issues"
   },
-  "homepage": "https://github.com/teamcodebyte/turbo-landing#readme",
+  "homepage": "https://github.com/kevinjosethomas/turbo-landing#readme",
   "devDependencies": {
     "autoprefixer": "^10.2.5",
     "postcss": "^8.2.10",
