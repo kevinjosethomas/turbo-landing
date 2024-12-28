@@ -51,3 +51,16 @@
 .waitlist-button {
   box-shadow: 0px 0px 10px 0px #ae8bff;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #141414;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8E5DFF;
+}
+
